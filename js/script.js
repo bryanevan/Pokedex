@@ -1,7 +1,7 @@
-alert('Aloha world');
+let pokemonList = [
+    { name:'Charizard', height:1.7, types:['fire', 'flying']},
+    { name:'Pikachu', height:.4, types:'electric'},
+    { name:'Squirtle', height:.5, types:'water'},
+    { name:'Ninetails', height:1.1, types:'electric'},
+];
 
-let myName = "Bryan Berkley";
-document.write(myName);
-
-let favoriteFood = "tacos";
-document.write(favoriteFood)
