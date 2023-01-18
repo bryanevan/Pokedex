@@ -4,6 +4,7 @@ let pokemonList = [
     { name:'Charizard', height:1.7, types:['fire', 'flying']},
     { name:'Ninetails', height:1.1, types:'electric'},
 ];
+document.write("<p></p>")
 
 for (let i=0; i < pokemonList.length; i++){
     if (pokemonList[i].height > 1.5){

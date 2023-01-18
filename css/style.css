@@ -1,0 +1,28 @@
+:root {
+    --background-color:#bab8bc;
+    --font-size-h1: 40px;
+    --font-universal: 18px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: var(--font-size-h1)
+}
+
+div {
+    padding: 0 auto;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Source Serif Pro', sans-serif;
+    font-weight: 600;
+    font-size: var(--font-universal);
+    /* Sets the font size to 16px */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
+    padding: 0 auto;
+    margin: 0 auto;
+    border: 1px solid black;
