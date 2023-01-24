@@ -5,7 +5,7 @@ let pokemonRepo = (function () {
     { name:'Squirtle', height:.5, types:'water'},
     { name:'Charizard', height:1.7, types:['fire', 'flying']},
     { name:'Ninetails', height:1.1, types:'electric'},
-  ]
+  ];
 document.write("<p></p>")
 
 function add(pokemon) {
