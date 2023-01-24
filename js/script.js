@@ -21,24 +21,7 @@ return {
   getAll: getAll
 };
 })();
-
-
-//for (let i=0; i < pokemonList.length; i++){
-  //  if (pokemonList[i].height > 1.5){
-    //document.write(pokemonList[i].name + " Height=" + pokemonList[i].height + "," + " Wow! That's a big Pokemon." + "<p></p>");}
-   // else {
-     //   document.write(pokemonList[i].name + " Height=" + pokemonList[i].height + "<p></p>") ;
-   // }
-//}
-
-
-pokemonList.forEach(function(pokemon){
-    if (pokemon.height >= 1.2) {
-        document.write(pokemon.name + " Height=" + pokemon.height + "," + " Wow! That's a big pokemonmon." + "<p></p>");}
-    else {
-        document.write(pokemon.name + " Height=" + pokemon.height + "<p></p>");}
-    });
     
 pokemonRepo.getAll().forEach(function(pokemon) {
-  document.write(pokemon.name +  pokemon.height);
+  document.write(pokemon.name + pokemon.height + "<p></p>");
 });
