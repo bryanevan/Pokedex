@@ -14,19 +14,19 @@ let pokemonRepository = (function() {
 
     // Return functions
 
-    // This function return the entire pokemon array
+    // Return the entire pokemon array
     function getAll() {
         return pokemonList;
     }
 
-    // This function adds (pushes) a pokemon object to the pokemon array
+    // Add (push) a pokemon object to the pokemon array
     function add(pokemon) {
         if (typeof pokemon === "object" && "name" in pokemon && "detailsUrl" in pokemon) {
             pokemonList.push(pokemon);
         }
     }
 
-    // This function returns a pokemon array with all pokemons
+    // Return a pokemon array with all pokemons
     // that include the "search" term in their Name
     function getByName(search) {
         return pokemonList.filter(function(pokemon) {
@@ -34,7 +34,7 @@ let pokemonRepository = (function() {
         });
     }
 
-    // This function adds a button to the website with the pokemon name
+    // Add a button to the website with the pokemon name
     // and an event listener that calls the showDetails function on click
     function addListItem(pokemon) {
         let uPokemonList = $(".pokemon-list");
@@ -50,15 +50,15 @@ let pokemonRepository = (function() {
         });
     }
 
-    // This function logs the given pokemon details on the console
+    // Log the given pokemon details on the console
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function() {
             showModal(pokemon);
         });
     }
 
-    // This function fetches all pokemons from the api
-    // ands adds them ton the array using the add function
+    // Fetch all pokemons from the api
+    // and adds them to the array using the add function
     function loadList() {
         showLoadingMessage();
         return fetch(apiUrl).then(function(response) {
@@ -78,7 +78,7 @@ let pokemonRepository = (function() {
         });
     }
 
-    // This function adds details to a specific pokemon object on the array
+    // Add details to a specific pokemon object on the array
     // using the deatilsUrl of the pokemon object to get the details from the api
     function loadDetails(item) {
         let url = item.detailsUrl;
@@ -94,19 +94,19 @@ let pokemonRepository = (function() {
         });
     }
 
-    // This function shows a loading animation
+    // Show a loading animation
     function showLoadingMessage() {
         loadBar.classList.remove("lds-ripple-hidden");
         loadBar.classList.add("lds-ripple-visible");
     }
 
-    // This function hides the loading animation
+    // Hide the loading animation
     function hideLoadingMessage() {
         loadBar.classList.remove("lds-ripple-visible");
         loadBar.classList.add("lds-ripple-hidden");
     }
 
-    // This function shows a modal with the pokemon details
+    // Show a modal with the pokemon details
     function showModal(pokemon) {
         let types = "";
         pokemon.types.forEach(function(type) {
