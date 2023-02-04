@@ -1,4 +1,4 @@
-html {
+#html {
     font-size: 100%;
 }
     
@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(6, 76, 117, 0.741);
+    background-color: #064c75bd;
     line-height: 1;
 }
 
@@ -21,12 +21,12 @@ body {
 }
 
 .btn-warning {
-    background-color: rgba(255, 251, 0, 0.996);
+    background-color: #fffb00fe;
     border: none;
 }
 
 .btn-warning:hover {
-    background-color: rgba(255, 251, 0, 0.996);;
+    background-color: #fffb00fe;;
     border: none;
 }
 
@@ -99,7 +99,7 @@ a, a:active, a:visited, a:focus {
     padding: 10px;
     font-size: 1.2rem;
     border: none;
-    background-color: rgba(3, 135, 122, 0.996);
+    background-color: #03877afe;
     border-radius: 5px;
     margin: 10px;
     width: 200px;
@@ -108,7 +108,7 @@ a, a:active, a:visited, a:focus {
 }
 
 .pokemon-button:hover {
-    background-color: orange;
+    background-color: #07e9d2fe;
     cursor: pointer;
     animation: button-shake 0.4s;
     color: black;
@@ -123,32 +123,32 @@ a, a:active, a:visited, a:focus {
     100% {transform: translateX(0)}
 }
 
-.lds-dual-ring {
+.lds-ripple {
     width: 80px;
     height: 80px;
 }
 
-.lds-dual-ring-hidden {
+.lds-ripple-hidden {
     display: none;
 }
 
-.lds-dual-ring-visible {
+.lds-ripple-visible {
     display: inline-block;
 }
 
-.lds-dual-ring:after {
-    content: " ";
+.lds-ripple:after {
+    content: “ “;
     display: block;
     width: 64px;
     height: 64px;
     margin: 8px;
     border-radius: 50%;
-    border: 6px solid rgb(39, 0, 43);
-    border-color: rgb(141, 2, 39) transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
+    border: 6px solid #27002b;
+    border-color: #8d0227 transparent;
+    animation: lds-ripple 1.2s linear infinite;
 }
 
-@keyframes lds-dual-ring {
+@keyframes lds-ripple {
     0% {
       transform: rotate(0deg);
     }
@@ -158,5 +158,5 @@ a, a:active, a:visited, a:focus {
 }
 
 .modal-content {
-    background-color: rgba(255, 251, 0, 0.996);
+    background-color: #fffb00fe;
 }

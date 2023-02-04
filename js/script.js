@@ -1,7 +1,7 @@
 let pokemonRepository = (function() {
     let pokemonList = [];
-    let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=10";
-    let loadBar = document.querySelector(".lds-dual-ring");
+    let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=1000";
+    let loadBar = document.querySelector(".lds-ripple");
 
     let searchButton = $(".btn-warning");
     searchButton.on("click", function() {
@@ -96,14 +96,14 @@ let pokemonRepository = (function() {
 
     // This function shows a loading animation
     function showLoadingMessage() {
-        loadBar.classList.remove("lds-dual-ring-hidden");
-        loadBar.classList.add("lds-dual-ring-visible");
+        loadBar.classList.remove("lds-ripple-hidden");
+        loadBar.classList.add("lds-ripple-visible");
     }
 
     // This function hides the loading animation
     function hideLoadingMessage() {
-        loadBar.classList.remove("lds-dual-ring-visible");
-        loadBar.classList.add("lds-dual-ring-hidden");
+        loadBar.classList.remove("lds-ripple-visible");
+        loadBar.classList.add("lds-ripple-hidden");
     }
 
     // This function shows a modal with the pokemon details
