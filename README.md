@@ -9,7 +9,7 @@
 ![pokedex-app-homepage](/img/App_View.png)
     
 ## Links
- [Live View](https://bryanevan.github.io/simple-js-app/ "Live View")
+ [Live View](https://bryanevan.github.io/Pokedex/ "Live View")
     <br>
  [Pokemon API](https://pokeapi.co/api/v2/pokemon/?limit=150 "Pokemon API")
 
